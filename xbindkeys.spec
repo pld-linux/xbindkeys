@@ -1,5 +1,5 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
-Summary(pl):	TODO
+Summary(pl):	Przypisuje poleceniom pow³oki przciski myszy lub klawiatury w X'ach
 Name:		xbindkeys
 Version:	1.5.4
 Release:	1
@@ -21,7 +21,7 @@ window manager. XMMS panel applet for the KDE panel (kicker). It is
 used to be able
 
 %description -l pl
-xbindkeys jest programem, który pozwala na uruchamianie polecen
+xbindkeys jest programem, który pozwala na uruchamianie poleceñ
 pow³oki przy urzyciu twojej klawiatury lub myszki pod X11.
 Xbindkeys przypisuje komendy przyciskom za pomoc± prostego pliku
 konfiguracyjnego, niezale¿nie od mened¿era okien. Pozwala na
