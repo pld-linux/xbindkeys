@@ -1,5 +1,5 @@
 Summary:	Binds keys or mouse buttons to shell commands under X.
-Summary(pl):	?
+Summary(pl):	TODO
 Name:		xbindkeys
 Version:	1.5.4
 Release:	1
@@ -14,11 +14,14 @@ Requires:	tk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-xbindkeys is a program that allows you to launch shell commands with your keyboard or mouse under X. It links commands to keys or mouse buttons using a simple configuration file, and is independant of the window manager.
-XMMS panel applet for the KDE panel (kicker). It is used to be able
+xbindkeys is a program that allows you to launch shell commands with
+your keyboard or mouse under X. It links commands to keys or mouse
+buttons using a simple configuration file, and is independant of the
+window manager. XMMS panel applet for the KDE panel (kicker). It is
+used to be able
 
 %description -l pl
-?
+TODO
 
 %prep
 %setup -q
