@@ -1,12 +1,12 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
 Summary(pl):	Przypisywanie poleceniom pow³oki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
-Version:	1.5.4
+Version:	1.7.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
-# Source0-md5:	31919f5e8cc796070b0ec7f0c6ea9902
+# Source0-md5:	9176ee5d331160dc3dfafc41e8ec6925
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
@@ -46,7 +46,8 @@ rm -f missing aclocal.m4
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
