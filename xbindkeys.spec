@@ -21,7 +21,11 @@ window manager. XMMS panel applet for the KDE panel (kicker). It is
 used to be able
 
 %description -l pl
-TODO
+xbindkeys jest programem, który pozwala na uruchamianie polecen
+pow³oki przy urzyciu twojej klawiatury lub myszki pod X Window.
+Xbindkeys przypisuje komendy przyciskom za pomoc± prostego pliku
+konfiguracyjnego, niezale¿nie od mened¿era okien. Pozwala na
+przechwytywanie takich przycisków jak POWER czy WAKE na klawiaturze.
 
 %prep
 %setup -q
