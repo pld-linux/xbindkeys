@@ -1,5 +1,5 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
-Summary(pl):	Przypisuje poleceniom pow³oki przciski myszy lub klawiatury w X'ach
+Summary(pl):	Przypisywanie poleceniom pow³oki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
 Version:	1.5.4
 Release:	1
@@ -7,9 +7,10 @@ License:	GPL v2
 Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
+BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	XFree86-devel
+BuildRequires:	libtool
 Requires:	tk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -22,9 +23,9 @@ used to be able
 
 %description -l pl
 xbindkeys jest programem, który pozwala na uruchamianie poleceñ
-pow³oki przy urzyciu twojej klawiatury lub myszki pod X11.
-Xbindkeys przypisuje komendy przyciskom za pomoc± prostego pliku
-konfiguracyjnego, niezale¿nie od mened¿era okien. Pozwala na
+pow³oki przy u¿yciu klawiatury lub myszki pod X11. Xbindkeys
+przypisuje polecenia przyciskom za pomoc± prostego pliku
+konfiguracyjnego, niezale¿nie od zarz±dcy okien. Pozwala na
 przechwytywanie takich przycisków jak POWER czy WAKE na klawiaturze.
 
 %prep
