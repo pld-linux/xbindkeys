@@ -6,6 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
+# Source0-md5:	31919f5e8cc796070b0ec7f0c6ea9902
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
