@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
 # Source0-md5:	eea2fe306e99274e8730e199b85706d5
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 BuildRequires:	guile-devel
 BuildRequires:	libtool
@@ -34,10 +34,11 @@ przechwytywanie takich przycisków jak POWER czy WAKE na klawiaturze.
 %setup -q
 
 %build
-rm -f missing aclocal.m4
+rm -f aclocal.m4
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure \
 	--with-x
