@@ -1,18 +1,18 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
 Summary(pl):	Przypisywanie poleceniom pow³oki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
-Version:	1.7.1
-Release:	2
+Version:	1.7.4
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
-# Source0-md5:	9176ee5d331160dc3dfafc41e8ec6925
+# Source0-md5:	8c034fecef4c9ac9b9891f5f5f32ff68
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
 BuildRequires:	XFree86-devel
-BuildRequires:	autoconf
+BuildRequires:	autoconf  >= 2.59-9
 BuildRequires:	automake
-BuildRequires:	libtool
 BuildRequires:	guile-devel
+BuildRequires:	libtool
 Requires:	tk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -34,10 +34,11 @@ przechwytywanie takich przycisków jak POWER czy WAKE na klawiaturze.
 %setup -q
 
 %build
-rm -f missing aclocal.m4
+rm -f aclocal.m4
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure \
 	--with-x
