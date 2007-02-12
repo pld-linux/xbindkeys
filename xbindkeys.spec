@@ -1,5 +1,5 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
-Summary(pl.UTF-8):   Przypisywanie poleceniom powłoki przycisków myszy lub klawiatury pod X
+Summary(pl.UTF-8):	Przypisywanie poleceniom powłoki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
 Version:	1.8.0
 Release:	1
