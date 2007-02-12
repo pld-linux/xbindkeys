@@ -1,5 +1,5 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
-Summary(pl):	Przypisywanie poleceniom pow≥oki przyciskÛw myszy lub klawiatury pod X
+Summary(pl.UTF-8):   Przypisywanie poleceniom pow≈Çoki przycisk√≥w myszy lub klawiatury pod X
 Name:		xbindkeys
 Version:	1.8.0
 Release:	1
@@ -23,12 +23,12 @@ buttons using a simple configuration file, and is independant of the
 window manager. XMMS panel applet for the KDE panel (kicker). It is
 used to be able
 
-%description -l pl
-xbindkeys jest programem, ktÛry pozwala na uruchamianie poleceÒ
-pow≥oki przy uøyciu klawiatury lub myszki pod X11. Xbindkeys
-przypisuje polecenia przyciskom za pomoc± prostego pliku
-konfiguracyjnego, niezaleønie od zarz±dcy okien. Pozwala na
-przechwytywanie takich przyciskÛw jak POWER czy WAKE na klawiaturze.
+%description -l pl.UTF-8
+xbindkeys jest programem, kt√≥ry pozwala na uruchamianie polece≈Ñ
+pow≈Çoki przy u≈ºyciu klawiatury lub myszki pod X11. Xbindkeys
+przypisuje polecenia przyciskom za pomocƒÖ prostego pliku
+konfiguracyjnego, niezale≈ºnie od zarzƒÖdcy okien. Pozwala na
+przechwytywanie takich przycisk√≥w jak POWER czy WAKE na klawiaturze.
 
 %prep
 %setup -q
