@@ -1,12 +1,12 @@
 Summary:	Binds keys or mouse buttons to shell commands under X
 Summary(pl.UTF-8):	Przypisywanie poleceniom powłoki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
-Version:	1.8.1
+Version:	1.8.2
 Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
-# Source0-md5:	ea89c2def63d57297ed7bbade8696203
+# Source0-md5:	ad1abd56e758bc108493ad0e5b862ad3
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
