@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	guile	# disable scheme/guile configuration file style
+
 Summary:	Binds keys or mouse buttons to shell commands under X
 Summary(pl.UTF-8):	Przypisywanie poleceniom powłoki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
@@ -10,7 +14,7 @@ Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
-BuildRequires:	guile-devel
+%{?with_guile:BuildRequires:	guile-devel}
 BuildRequires:	libtool
 BuildRequires:	xorg-lib-libX11-devel
 Requires:	tk
@@ -40,7 +44,8 @@ rm -f aclocal.m4
 %{__autoheader}
 %{__automake}
 %configure \
-	--with-x
+	--with-x \
+	%{!?with_guile: --disable-guile}
 
 %{__make}
 
