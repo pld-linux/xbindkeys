@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	guile	# disable scheme/guile configuration file style
-
+#
 Summary:	Binds keys or mouse buttons to shell commands under X
 Summary(pl.UTF-8):	Przypisywanie poleceniom powłoki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
@@ -43,7 +43,7 @@ Requires:	tk
 xbindkeys_show is a Tk program that shows the grabbing keys used in
 xbindkeys.
 
-%description -l pl.UTF-8
+%description xbindkeys_show -l pl.UTF-8
 xbindkeys_show jest programem w Tk, który pokazuje przyciski
 obsługiwane aktualnie przez xbindkeys.
 
