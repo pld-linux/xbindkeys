@@ -17,7 +17,6 @@ BuildRequires:	automake
 %{?with_guile:BuildRequires:	guile-devel}
 BuildRequires:	libtool
 BuildRequires:	xorg-lib-libX11-devel
-Requires:	tk
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,6 +31,21 @@ powłoki przy użyciu klawiatury lub myszki pod X11. Xbindkeys
 przypisuje polecenia przyciskom za pomocą prostego pliku
 konfiguracyjnego, niezależnie od zarządcy okien. Pozwala na
 przechwytywanie takich przycisków jak POWER czy WAKE na klawiaturze.
+
+%package xbindkeys_show
+Summary:	Program to show the grabbing keys used in xbindkeys
+Summary(pl.UTF-8):	Program pokazujący przyciski obsługiwane przez xbindkeys
+Group:		X11/Applications
+Requires:	%{name}
+Requires:	tk
+
+%description xbindkeys_show
+xbindkeys_show is a Tk program that shows the grabbing keys used in
+xbindkeys.
+
+%description -l pl.UTF-8
+xbindkeys_show jest programem w Tk, który pokazuje przyciski
+obsługiwane aktualnie przez xbindkeys.
 
 %prep
 %setup -q
@@ -62,5 +76,9 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README
 %attr(755,root,root) %{_bindir}/xbindkeys
+%{_mandir}/man1/xbindkeys.1*
+
+%files xbindkeys_show
+%defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/xbindkeys_show
-%{_mandir}/man1/xbindkeys*
+%{_mandir}/man1/xbindkeys_show.1*
