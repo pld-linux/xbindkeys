@@ -11,6 +11,7 @@ License:	GPL v2
 Group:		X11/Applications
 Source0:	http://hocwp.free.fr/xbindkeys/%{name}-%{version}.tar.gz
 # Source0-md5:	ad1abd56e758bc108493ad0e5b862ad3
+Patch0:		%{name}-aclocal.patch
 URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
@@ -49,6 +50,7 @@ obsługiwane aktualnie przez xbindkeys.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 rm -f aclocal.m4
