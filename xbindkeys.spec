@@ -11,7 +11,7 @@ License:	GPL v2
 Group:		X11/Applications
 Source0:	http://www.nongnu.org/xbindkeys/%{name}-%{version}.tar.gz
 # Source0-md5:	4b66a05594dbc6888c0a6439351aa66d
-URL:		http://hocwp.free.fr/xbindkeys/xbindkeys.html
+URL:		http://www.nongnu.org/xbindkeys/xbindkeys.html
 BuildRequires:	autoconf >= 2.59-9
 BuildRequires:	automake
 %{?with_guile:BuildRequires:	guile-devel}
