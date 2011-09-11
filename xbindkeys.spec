@@ -6,7 +6,7 @@ Summary:	Binds keys or mouse buttons to shell commands under X
 Summary(pl.UTF-8):	Przypisywanie poleceniom powłoki przycisków myszy lub klawiatury pod X
 Name:		xbindkeys
 Version:	1.8.5
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://www.nongnu.org/xbindkeys/%{name}-%{version}.tar.gz
@@ -49,6 +49,8 @@ obsługiwane aktualnie przez xbindkeys.
 
 %prep
 %setup -q
+
+touch config.rpath
 
 %build
 rm -f aclocal.m4
